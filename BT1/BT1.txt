@@ -1,0 +1,17 @@
+1. Sửa Tin tức Việt Nhật thành Tin tức Việt - Nhật
+UPDATE danhmuctin SET tendanhmuctin="Tin tức Việt - Nhật" WHERE tendanhmuctin="Tin tức Việt Nhật"
+
+2. Sửa Toàn cảnh nhật Bản thành Toàn cảnh Nhật Bản
+UPDATE danhmuctin SET tendanhmuctin="Toàn cảnh Nhật Bản" WHERE tendanhmuctin="Toàn cảnh nhật Bản"
+
+3. Liệt kê các tendanhmuctin
+SELECT tendanhmuctin FROM danhmuctin;
+
+4. Liệt kê id_danhmictin và tendanhmuctin có id_danhmuctin > 4
+SELECT id_danhmuctin, tendanhmuctin FROM danhmuctin WHERE id_danhmuctin >4;
+
+5. Liệt kê tendanhmuctin có chứa từ Nhật
+SELECT tendanhmuctin FROM danhmuctin WHERE tendanhmuctin LIKE "%Nhật%";
+
+6. Xóa các danhmuctin có id_danhmuctin bằng 5 và 6
+DELETE FROM danhmuctin WHERE id_danhmuctin in (5, 6)

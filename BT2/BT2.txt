@@ -1,0 +1,20 @@
+﻿1. Sửa ten_cat thành Sinh nhật có id_cat = 2
+UPDATE loai_hoa SET ten_cat = "Sinh nhật" WHERE id_cat=2;
+
+2. Cập nhật ten_cat thành Hoa hạnh phúc có id_cat = 8
+UPDATE loai_hoa SET ten_cat = "Hoa hạnh phúc" WHERE id_cat=8;
+
+3. Hiển thị danh sách các loai_hoa
+SELECT * FROM loai_hoa;
+
+4. Sửa ten_cat thành Kỷ niệm có id_cat = 4
+UPDATE loai_hoa SET ten_cat = "Kỷ niệm" WHERE id_cat=4;
+
+5. Đếm số loai_hoa có id_cat > 5
+SELECT count(*) FROM loai_hoa WHERE id_cat>5;
+
+6. Xóa loai_hoa có ten_cat = "Hoa bí" hoặc ten_cat = "Hoa bầu"
+DELETE FROM loai_hoa WHERE ten_cat="Hoa bí" OR ten_cat="Hoa bầu";
+
+7. Hiển thị danh sách tên các loai_hoa
+SELECT ten_cat FROM loai_hoa;

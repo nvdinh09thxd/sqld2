@@ -1,0 +1,23 @@
+﻿1. sửa "KH01-Lập trình web nâng cao" thành "KH01-thành Lập trình Wordpress nâng cao"
+
+UPDATE lop SET tenlop = "KH01-Lập trình Wordpress nâng cao" WHERE tenlop = "KH01-Lập trình web nâng cao"
+
+2. sửa tenlop thành  "KH04-Lập trình web với PHP & MySQL" tại id_lop = 4:
+
+UPDATE lop SET tenlop="KH04-Lập trình web với PHP & MySQL" WHERE id_lop=4
+
+3. Liệt kê các tenlop: 
+
+SELECT tenlop FROM lop;
+
+4. Liệt kê id_lop, tenlop có id_lop >= 4;
+
+SELECT id_lop, tenlop FROM lop WHERE id_lop >= 4;
+
+5. Liệt kê các tenlop có chứa từ "nâng cao"
+
+SELECT tenlop FROM lop WHERE tenlop LIKE "%nâng cao%";
+
+6. Xóa hàng có id_lop = 3;
+
+DELETE FROM lop WHERE id_lop = 3;
